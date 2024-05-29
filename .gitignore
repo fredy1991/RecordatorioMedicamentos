@@ -1,0 +1,9 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/ProgramadorMedicamentos/ProgramadorMedicamentos/obj
+/ProgramadorMedicamentos/ProgramadorMedicamentos.Droid/obj
+/ProgramadorMedicamentos/ProgramadorMedicamentos.iOS/obj
+/ProgramadorMedicamentos/ProgramadorMedicamentos.Mac/obj
+/ProgramadorMedicamentos/ProgramadorMedicamentos.WinUI/obj

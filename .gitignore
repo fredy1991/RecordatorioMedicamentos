@@ -1,0 +1,9 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ProgramadorMedicamentos
+/.vs/RecordatorioMedicamentos/FileContentIndex
+/RecordatorioMedicamentos/obj
+/.vs/RecordatorioMedicamentos/DesignTimeBuild
+/RecordatorioMedicamentos/bin/Debug

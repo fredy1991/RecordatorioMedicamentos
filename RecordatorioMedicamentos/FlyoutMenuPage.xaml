@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RecordatorioMedicamentos"
+             xmlns:menu="clr-namespace:RecordatorioMedicamentos.Class"
+             x:Class="RecordatorioMedicamentos.FlyoutMenuPage"
+             Title="Menu">
+    <StackLayout>
+        <ListView x:Name="menuItemsListView" ItemSelected="OnMenuItemSelected">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type menu:FlyoutMenuItem}">
+                    <menu:FlyoutMenuItem Title="Inicio" TargetType="{x:Type local:MainPage}" />
+                    <menu:FlyoutMenuItem Title="Registro Medicamento" TargetType="{x:Type local:RegisterMedication}" />
+                    <menu:FlyoutMenuItem Title="Registrar Apoderado o Familiar" TargetType="{x:Type local:RegisterParentFamily}" />
+                    <menu:FlyoutMenuItem Title="Consultar Detalle Oficial Medicamento" TargetType="{x:Type local:SearchMedicationDetail}" />
+                    <menu:FlyoutMenuItem Title="Consultar Registro INVIMA Medicamento" TargetType="{x:Type local:SearchINVIMARegister}" />
+                    <menu:FlyoutMenuItem Title="Informacion App" TargetType="{x:Type local:AppInformation}" />
+                    <menu:FlyoutMenuItem Title="Cerrar Sesión" TargetType="{x:Type local:LogOut}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
